@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
   <title>Assignment 23</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <h1>You Like Me--You Really Like Me!></h1>
-  <button>{{  }}</button>
-  
+
+  <div class="container" ng-controller="MyController">
+
+    <button ng-click="incrementByOne()">{{ count }} {{ message }}</button>
+
+  </div>
+
   <script src="js/main.js"></script>
 </body>
 </html>
